@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#6B3F24" />
   <title>睿悦茶业｜源头岩茶</title>
+
   <style>
     :root{
       --brown:#6B3F24;
@@ -38,14 +39,16 @@
     .hero{
       position:relative;
       overflow:hidden;
-      padding:34px 22px 26px;
+      padding:38px 22px 30px;
       color:#fff;
       text-align:center;
       background:
-        linear-gradient(120deg, rgba(43,27,18,.96), rgba(107,63,36,.90)),
-        radial-gradient(circle at 88% 18%, rgba(201,163,90,.35), transparent 34%);
-      border-bottom-left-radius:28px;
-      border-bottom-right-radius:28px;
+        linear-gradient(120deg, rgba(43,27,18,.92), rgba(107,63,36,.82)),
+        url("bg-tea-mountain.png");
+      background-size:cover;
+      background-position:center;
+      border-bottom-left-radius:30px;
+      border-bottom-right-radius:30px;
       box-shadow:0 18px 40px rgba(43,27,18,.18);
     }
 
@@ -64,7 +67,7 @@
     .brand{
       position:relative;
       z-index:1;
-      font-size:30px;
+      font-size:31px;
       font-weight:900;
       letter-spacing:.08em;
       color:var(--gold);
@@ -83,11 +86,11 @@
       position:relative;
       z-index:1;
       margin:12px auto 0;
-      max-width:520px;
+      max-width:540px;
       font-size:13.5px;
       line-height:1.8;
       color:#f4ebdd;
-      opacity:.95;
+      opacity:.96;
     }
 
     .badges{
@@ -105,8 +108,8 @@
       border-radius:999px;
       font-size:12px;
       font-weight:800;
-      background:rgba(255,255,255,.13);
-      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.25);
       backdrop-filter:blur(8px);
       white-space:nowrap;
     }
@@ -116,7 +119,7 @@
     }
 
     .card{
-      background:rgba(255,248,236,.88);
+      background:rgba(255,248,236,.90);
       border:1px solid rgba(201,163,90,.28);
       border-radius:22px;
       padding:18px;
@@ -218,13 +221,88 @@
       line-height:1.6;
     }
 
+    .media-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin-top:12px;
+    }
+
+    .media-item{
+      overflow:hidden;
+      border-radius:18px;
+      background:#fff;
+      border:1px solid rgba(201,163,90,.22);
+      box-shadow:0 8px 18px rgba(107,63,36,.08);
+    }
+
+    .media-item img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .media-caption{
+      padding:10px 12px 12px;
+      font-size:13px;
+      font-weight:800;
+      color:var(--brown);
+      line-height:1.45;
+    }
+
+    .wide-img{
+      margin-top:12px;
+      overflow:hidden;
+      border-radius:20px;
+      background:#fff;
+      border:1px solid rgba(201,163,90,.24);
+      box-shadow:0 10px 22px rgba(107,63,36,.10);
+    }
+
+    .wide-img img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .video-box{
+      overflow:hidden;
+      border-radius:20px;
+      background:#fff;
+      border:1px solid rgba(201,163,90,.26);
+      margin-top:12px;
+      box-shadow:0 10px 22px rgba(107,63,36,.10);
+    }
+
+    .video-box video{
+      width:100%;
+      max-height:520px;
+      display:block;
+      background:#000;
+    }
+
+    .video-caption{
+      padding:10px 12px 12px;
+      font-size:13px;
+      font-weight:800;
+      color:var(--brown);
+      line-height:1.45;
+    }
+
     .contact-card{
-      background:linear-gradient(135deg,#2b1b12,#6b3f24);
+      background:
+        linear-gradient(135deg, rgba(43,27,18,.96), rgba(107,63,36,.94)),
+        url("bg-tea-workshop.png");
+      background-size:cover;
+      background-position:center;
       color:#fff;
       border-radius:24px;
       padding:20px;
       box-shadow:0 16px 32px rgba(43,27,18,.22);
       margin-top:16px;
+      overflow:hidden;
     }
 
     .contact-card h2{
@@ -308,6 +386,7 @@
       opacity:0;
       pointer-events:none;
       transition:.25s;
+      z-index:999;
     }
 
     .toast.show{
@@ -327,8 +406,17 @@
         padding:30px 18px 24px;
       }
 
-      .grid{
+      .grid,
+      .media-grid{
         grid-template-columns:1fr;
+      }
+
+      .media-item img{
+        height:210px;
+      }
+
+      .wide-img img{
+        height:210px;
       }
 
       .cta{
@@ -432,6 +520,61 @@
               <span>支持门店陈列、渠道供货、节庆礼盒、企业礼赠等合作。</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>产品与茶山实拍</h2>
+        <p>
+          从茶山环境、鲜叶状态到产品包装，客户可以更直观看到睿悦茶业的源头与产品形象。
+        </p>
+
+        <div class="media-grid">
+          <div class="media-item">
+            <img src="product-1.jpg" alt="睿悦茶业岩茶礼盒" />
+            <div class="media-caption">岩茶礼盒 · 适合会客与送礼</div>
+          </div>
+
+          <div class="media-item">
+            <img src="product-2.jpg" alt="睿悦茶业素心兰岩茶" />
+            <div class="media-caption">素心兰系列 · 日常品饮与礼赠</div>
+          </div>
+
+          <div class="media-item">
+            <img src="茶叶.jpg" alt="茶叶实拍" />
+            <div class="media-caption">鲜叶细节 · 看得见的新鲜感</div>
+          </div>
+
+          <div class="media-item">
+            <img src="茶芽.jpg" alt="茶芽实拍" />
+            <div class="media-caption">茶芽新梢 · 山场原料展示</div>
+          </div>
+        </div>
+
+        <div class="wide-img">
+          <img src="茶山.jpg" alt="武夷山茶山实拍" />
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>茶山视频</h2>
+        <p>
+          茶山、鲜叶与山场环境视频，可帮助客户更快建立对源头茶叶的信任感。
+        </p>
+
+        <div class="video-box">
+          <video src="tea-video-1.mp4" controls muted playsinline preload="metadata"></video>
+          <div class="video-caption">茶山采摘 / 茶园环境</div>
+        </div>
+
+        <div class="video-box">
+          <video src="tea-video-2.mp4" controls muted playsinline preload="metadata"></video>
+          <div class="video-caption">鲜叶入筐 / 原料细节</div>
+        </div>
+
+        <div class="video-box">
+          <video src="tea-video-3.mp4" controls muted playsinline preload="metadata"></video>
+          <div class="video-caption">茶树新梢 / 山场近景</div>
         </div>
       </section>
 
